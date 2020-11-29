@@ -368,7 +368,12 @@ body {
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
@@ -424,13 +429,13 @@ p {
   margin-bottom: 20px;
 }
 p.large {
-  font-size: 1.3rem;
-  line-height: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
 }
 @media screen and (max-width: 900px) {
   p.large {
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
   }
 }
 
@@ -1020,7 +1025,8 @@ textarea {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -1030,7 +1036,8 @@ html {
   font-size: 16px;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -1084,7 +1091,8 @@ section .section-heading {
   padding-left: 0;
 }
 
-button, .button {
+button,
+.button {
   display: block;
   max-width: 200px;
   width: 100%;
@@ -1102,14 +1110,17 @@ button, .button {
   transition: all 0.2s;
   text-align: center;
 }
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   opacity: 0.5;
 }
-button.button-secondary, .button.button-secondary {
+button.button-secondary,
+.button.button-secondary {
   background: var(--primary);
   color: var(--white);
 }
-button.button-submit, .button.button-submit {
+button.button-submit,
+.button.button-submit {
   margin-top: 20px;
   max-width: 180px;
   letter-spacing: 6px;
@@ -1174,7 +1185,13 @@ button.button-submit, .button.button-submit {
   position: relative;
 }
 .slider img {
-  max-height: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .slider img {
+    height: calc(100vh - 120px);
+  }
 }
 
 .hero-slider {
@@ -1192,7 +1209,9 @@ button.button-submit, .button.button-submit {
   align-items: center;
 }
 .hero-slider .overlay img {
-  max-width: 750px;
+  max-width: 600px;
+  position: relative;
+  top: -20px;
 }
 
 .two-column-layout {
@@ -1289,10 +1308,53 @@ button.button-submit, .button.button-submit {
   background-position: center top;
   background-size: 100% auto;
 }
-@media screen and (max-width: 900px) {
-  .graphic {
-    min-height: 600px;
+
+.partners-header {
+  margin-bottom: 3rem;
+}
+
+.partner {
+  margin-bottom: 4rem;
+}
+
+.partner-img__wrapper {
+  margin: 0 auto;
+  position: relative;
+  background-color: grey;
+  overflow: hidden;
+  max-width: 440px;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.partner-img__wrapper:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+.partner-img__wrapper > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 800px) {
+  .partner-img__wrapper {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 3%;
   }
+}
+
+.partner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.partner-img--merritt {
+  object-position: 0 -30px;
 }
 
 .logo-secondary--about {

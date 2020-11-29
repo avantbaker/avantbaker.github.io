@@ -1,46 +1,46 @@
-
-
 @font-face {
-  font-family: 'Sweet Sans';
-  src: url('../fonts/SweetSansRegular.otf');
+  font-family: "Sweet Sans";
+  src: url("../fonts/SweetSansRegular.otf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Sweet Sans';
-  src: url('../fonts/SweetSansItalic.otf');
+  font-family: "Sweet Sans";
+  src: url("../fonts/SweetSansItalic.otf");
   font-weight: 400;
   font-style: italic;
 }
 
-
 @font-face {
-  font-family: 'Sweet Sans';
-  src: url('../fonts/SweetSansBold.otf');
+  font-family: "Sweet Sans";
+  src: url("../fonts/SweetSansBold.otf");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Sweet Sans';
-  src: url('../fonts/SweetSansMediumItalic.otf');
+  font-family: "Sweet Sans";
+  src: url("../fonts/SweetSansMediumItalic.otf");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Sweet Sans';
-  src: url('../fonts/SweetSansMedium.otf');
+  font-family: "Sweet Sans";
+  src: url("../fonts/SweetSansMedium.otf");
   font-weight: 500;
 }
 
-
-
 body {
-  font-family: 'Sweet Sans', sans-serif;
+  font-family: "Sweet Sans", sans-serif;
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
@@ -57,7 +57,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 6px;
   font-weight: bold;
@@ -69,7 +69,6 @@ h2 {
     margin-bottom: 10px;
   }
 }
-
 
 h3 {
   font-size: 2rem;
@@ -89,19 +88,18 @@ h4 {
   font-weight: 600;
 }
 
-
 p {
   font-size: 1rem;
   line-height: 1.75rem;
   margin-bottom: 20px;
 
   &.large {
-    font-size: 1.3rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
 
     @media screen and (max-width: 900px) {
-      font-size: 1.5rem;
-      line-height: 3rem;
+      font-size: 1.125rem;
+      line-height: 2rem;
     }
   }
 }
@@ -109,7 +107,7 @@ p {
 ul {
   display: block;
   margin-bottom: 50px;
-  
+
   li {
     // margin-left: 20px;
     font-size: 1rem;
