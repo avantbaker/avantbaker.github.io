@@ -424,19 +424,13 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   margin-bottom: 20px;
 }
 p.large {
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-}
-@media screen and (max-width: 900px) {
-  p.large {
-    font-size: 1.125rem;
-    line-height: 2rem;
-  }
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 ul {
@@ -1310,10 +1304,16 @@ button.button-submit,
 }
 
 .partners-header {
-  margin-bottom: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.partners {
+  display: flex;
 }
 
 .partner {
+  float: left;
   margin-bottom: 4rem;
 }
 
@@ -1345,6 +1345,10 @@ button.button-submit,
     margin-right: 5%;
     margin-bottom: 3%;
   }
+}
+
+.partner-img__content {
+  overflow: hidden;
 }
 
 .partner-img {

@@ -89,18 +89,18 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   margin-bottom: 20px;
 
   &.large {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
 
-    @media screen and (max-width: 900px) {
-      font-size: 1.125rem;
-      line-height: 2rem;
-    }
+    // @media screen and (max-width: 900px) {
+    //   font-size: 1.125rem;
+    //   line-height: 2rem;
+    // }
   }
 }
 
